@@ -1,0 +1,35 @@
+.text2{
+    font-size: calc(0.5em + 0.7vw);
+    text-align: center;
+}
+
+.heading2{
+    font-size: calc(2em);
+}
+
+.black{
+    color: black;
+}
+
+.title1{
+    font-size: calc(0.5em + 1.5vw);
+    margin-bottom: calc(0.5em + 1vw);
+    text-align: center;
+}
+
+.skills{
+    color: black;
+    font-size: calc(0.5em + 0.7vw);
+    margin-bottom: calc(1em + 1vw);
+}
+
+.text21{
+        font-size: calc(1.5em + 1.5vw);
+    color: white;
+    margin: 0.4em 0.1em 0em 0.1em;
+}
+
+.lg2{
+    font-size: calc(2em + 2vw);
+    color: black;
+}

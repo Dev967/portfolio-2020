@@ -1,0 +1,17 @@
+.icon1{
+    height: calc(1em + 1vw);
+    width: calc(1em + 1vw);
+}
+
+.icon2{
+    /* height: 50px;
+    width: 50px; */
+    height: calc(2em + 1.5vw);
+    width: calc(2em + 1.5vw);
+}
+
+.icon3{
+    height: calc(1em + 1vw);
+    width: calc(1em + 1vw);
+    margin-left: calc(0.3em + 0.3vw);
+}

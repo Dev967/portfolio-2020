@@ -1,0 +1,12 @@
+@media screen and (max-width: 690px){
+    .hand3{
+        display: none;
+    }
+    .contact-page{
+        display: flex;
+        justify-content: center;
+    }
+    .right4{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,17 @@
+.credits-page{
+    display: flex;
+    justify-content: center;
+}
+.screen6{
+    margin-top: calc(2em + 2vw);
+    width: 70vw;
+    height: calc(100vh - calc(2em + 2vw));
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left6, .right6{
+    text-align: center;
+}

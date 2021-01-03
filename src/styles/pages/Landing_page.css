@@ -1,0 +1,33 @@
+
+
+.main-container{
+    height: 85vh;
+    width: 90vw;
+    border-radius: 10px;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    padding-top: calc(3em + 3vw);
+    /* width: calc(15em + 38vw);  */
+    width: auto;
+}
+
+.right{    
+    width: calc(5em + 10vw);
+    height: auto;
+    align-self: center;
+}
+
+.three {
+    margin-top: calc(3em + 2vw);
+    display: flex;
+    justify-content: space-evenly;
+}

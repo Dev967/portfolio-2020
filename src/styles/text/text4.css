@@ -1,0 +1,24 @@
+.inline{
+    display: inline-block;
+}
+.text4{
+    font-size: calc(0.8em + 2vw);
+    color: white;
+    /* margin: 0.4em 0.1em 0em 0.1em; */
+}
+.black{
+    color: black;
+}
+
+.lg{
+    font-size: calc(2em + 2vw);
+    color: black;
+}
+
+.xl{
+    font-size: 5em;
+}
+
+.xxl{
+    font-size: calc(4em + 8vw);
+}

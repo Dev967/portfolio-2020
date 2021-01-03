@@ -1,0 +1,9 @@
+.glass{
+    background-color: rgba(241, 241, 241, 0.4);
+    /* filter: blur(1px); */
+}
+
+.glass2{
+    background-color: rgba(54, 54, 54, 0.205);
+    /* filter: blur(1px); */
+}

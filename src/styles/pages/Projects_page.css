@@ -1,0 +1,31 @@
+.projects-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.panel{
+    margin-bottom: calc(1em)
+}
+
+.inner-block{
+    border-radius: 10px;
+    padding: calc(1em + 0.5vw);
+    margin: calc(1em + 1vw);
+    width: calc(5em + 30vw);
+}
+
+.stack, .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: calc(0.5em + 0.5vw);
+}
+
+.title2{
+    text-align: center;
+    font-size: calc(0.5em + 2vw);
+}
+
+.hand-img{
+    width: calc(10em + 35vw);
+    height: calc(10em + 35vw);
+}

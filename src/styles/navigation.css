@@ -1,0 +1,11 @@
+.shuttle-icon{
+    width: 3vw;
+    height: 3vw;
+    /* width: calc(1em + 1vw);
+    height: calc(1em + 1vw) */
+}
+
+.navlink{
+    text-decoration: none;
+    color: white;
+}

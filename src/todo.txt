@@ -1,0 +1,20 @@
+blog page
+certiicate page
+contact page
+project page
+skill page
+main page
+
+MP  => Skills
+    => Contact
+    => Projects
+    => About => Certificate
+             => blog page
+
+
+add certificates
+mobile site
+add links
+define button styles
+add tetris
+if masnory works remove packery from package.json

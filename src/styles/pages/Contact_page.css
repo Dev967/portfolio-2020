@@ -1,0 +1,58 @@
+.contact-page{
+    display: flex;
+}
+
+.follow-me{
+    padding-top:calc(1em + 1vw);
+     padding-bottom: calc(0.1em + 0.1vw);
+     display: flex;
+     justify-content: space-evenly;
+}
+.follow-me img{
+    cursor: pointer;
+}
+
+.hand3{
+    width: calc(10em + 35vw);
+    height: calc(10em + 35vw);
+}
+
+.right4{
+    width: 40vw;
+}
+
+.form{
+    border-radius: 10px;
+    margin-top: calc(2em + 2vw);
+    width: 100%;
+    height: calc(100vh - calc(2em + 2vw));
+    padding: 0 calc(0.1em + 0.1vw) 0 calc(0.2em + 0.5vw);
+}
+
+.name-in, .message-in{
+    width: 97%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.name-in::placeholder, .message-in::placeholder{
+    color: black;
+}
+
+.name-in{
+    height: calc(2em + 2vw);
+    margin: 2em 0 2em 0;
+    padding: 0 0 0 0.5em;
+}
+
+.message-in{
+    height: calc(8em + 8vw);
+    padding: 1em 0 0 0.5em;
+    margin: 0 0 2em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.send-in{
+    float: right;
+    font-size: calc(1em + 1vw);
+}

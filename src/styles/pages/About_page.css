@@ -1,0 +1,21 @@
+.about-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left5{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+}
+
+.quote-screen{
+    padding-left: calc(2em + 2vw);
+    align-self: center;
+}
+
+.right5{
+    width: 60vw;
+    height: 100vh;
+    text-align: center;
+}
