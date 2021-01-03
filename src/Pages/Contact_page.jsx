@@ -15,7 +15,7 @@ class ContactPage extends React.Component {
                 <div className="back1">
                     <div className="contact-page">
                         <div className="left4">
-                            <img className="hand3" src="/images/29_Hand_with_phone_02.png" alt="hand with phone" />
+                            <img className="hand3" src="/images/29_Hand_with_phone_02.png-min" alt="hand with phone" />
                         </div>
                         <div className="right4 ">
                             <div className="form glass">

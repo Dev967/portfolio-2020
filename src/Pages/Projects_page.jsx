@@ -42,7 +42,7 @@ class ProjectsPage extends React.Component {
                         </div>)}
                     </div>
                     <div className="right3">
-                        <img className="hand-img" src="/images/9_Hands_Snow_globe.png" alt="test" />
+                        <img className="hand-img" src="/images/9_Hands_Snow_globe-min.png" alt="test" />
                     </div>
                 </div>
             </div>
