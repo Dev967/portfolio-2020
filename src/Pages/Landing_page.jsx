@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import "../styles/backgrounds.css"
-import "../styles/pages/Landing_page.css"
-import "../styles/glass.css"
-import "../styles/text/text1.css"
-import "../styles/button.css"
+import "../styles/backgrounds.css";
+import "../styles/pages/Landing_page.css";
+import "../styles/glass.css";
+import "../styles/text/text1.css";
+import "../styles/button.css";
 
 class LandingPage extends React.Component {
     render() {

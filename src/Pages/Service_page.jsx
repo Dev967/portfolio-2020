@@ -1,15 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import skills from "../data/services.js"
+import skills from "../data/services.js";
 
-import "../styles/backgrounds.css"
-import "../styles/glass.css"
-import "../styles/button.css"
-import "../styles/pages/Service_page.css"
-// import "../styles/text/text1.css"
-import "../styles/text/text2.css"
-import "../styles/icon.css"
-import "../styles/media-queries/Service_page_query.css"
+import "../styles/backgrounds.css";
+import "../styles/glass.css";
+import "../styles/button.css";
+import "../styles/pages/Service_page.css";
+import "../styles/text/text2.css";
+import "../styles/icon.css";
+import "../styles/media-queries/Service_page_query.css";
 
 
 class ServicePage extends React.Component {

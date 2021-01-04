@@ -1,10 +1,10 @@
 import React from "react";
 
-import "../styles/backgrounds.css"
-import "../styles/glass.css"
-import "../styles/pages/About_page.css"
-import "../styles/text/text3.css"
-import "../styles/media-queries/About_page_query.css"
+import "../styles/backgrounds.css";
+import "../styles/glass.css";
+import "../styles/pages/About_page.css";
+import "../styles/text/text3.css";
+import "../styles/media-queries/About_page_query.css";
 
 class AboutPage extends React.Component {
     render() {

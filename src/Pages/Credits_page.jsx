@@ -1,9 +1,9 @@
 import React from "react";
 
-import "../styles/backgrounds.css"
-import "../styles/glass.css"
-import "../styles/pages/Credits_page.css"
-import "../styles/text/text4.css"
+import "../styles/backgrounds.css";
+import "../styles/glass.css";
+import "../styles/pages/Credits_page.css";
+import "../styles/text/text4.css";
 
 class CreditsPage extends React.Component {
     render() {

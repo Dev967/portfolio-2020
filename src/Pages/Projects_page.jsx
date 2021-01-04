@@ -1,13 +1,13 @@
 import React from "react";
 
-import "../styles/backgrounds.css"
-import "../styles/pages/Projects_page.css"
-import "../styles/icon.css"
-import "../styles/button.css"
-import "../styles/icon.css"
-import "../styles/media-queries/Projects_page_query.css"
+import "../styles/backgrounds.css";
+import "../styles/pages/Projects_page.css";
+import "../styles/icon.css";
+import "../styles/button.css";
+import "../styles/icon.css";
+import "../styles/media-queries/Projects_page_query.css";
 
-import projects from "../data/projects"
+import projects from "../data/projects";
 import icon from "../data/iconmap";
 
 
@@ -42,7 +42,7 @@ class ProjectsPage extends React.Component {
                         </div>)}
                     </div>
                     <div className="right3">
-                        <img className="hand-img" src="/images/9_Hands_Snow_globe-min.png" alt="test" />
+                        <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" />
                     </div>
                 </div>
             </div>

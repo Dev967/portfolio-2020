@@ -1,17 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 import {
-    Fab,
-    Action
-} from 'react-tiny-fab'
+    Fab
+} from 'react-tiny-fab';
 
 import { NavLink } from 'react-router-dom';
 
 
 import icons from "./data/iconmap"
 
-import "./styles/button.css"
-import "./styles/navigation.css"
+import "./styles/button.css";
+import "./styles/navigation.css";
 
 class Navigation extends React.Component {
     render() {
