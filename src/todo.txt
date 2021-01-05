@@ -16,5 +16,5 @@ add certificates
 mobile site
 add links
 define button styles
+change font
 add tetris
-if masnory works remove packery from package.json

@@ -16,6 +16,9 @@ import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+      </style>
       <div>
         <Navigation />
         <Switch>

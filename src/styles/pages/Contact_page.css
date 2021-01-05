@@ -35,6 +35,10 @@
     border-radius: 10px;
     color: white;
 }
+.name-in:focus, .message-in:focus{
+    outline: none;
+}
+
 .name-in::placeholder, .message-in::placeholder{
     color: black;
 }

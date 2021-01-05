@@ -81,35 +81,37 @@ class ServicePage extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className="back1 service-page">
-                    <div className="left2">
-                        {this.state.data.map(element => (
-                            <div key={element.index}>
-                                <button onClick={() => this.select(element.index)} className="btn2">
-                                    <div className="inbtn2">
-                                        {element.title}
-                                        {element.icon != null ? <img className="icon1 eicon" alt={element.icon.alt} src={element.icon.path} /> : <div></div>}
-                                    </div>
-                                </button>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="right2 glass">
-                        <div className="screen">
-                            {this.state.selected == null ? (
-                                <div>
-                                    <h1 className="text21">are you looking for </h1>
-                                    <h1 className="text21 lg2 black inline">Front-end</h1>
-                                    <h1 className="text21 inline">guy ?</h1>
-                                    <h1 className="text21">or maybe a</h1>
-                                    <h1 className="text21 lg2 black inline">Back-end</h1>
-                                    <h1 className="text21 inline">guy ?</h1>
-                                    <h1 className="text21 inline">Well, </h1>
-                                    <h1 className="text21 lg2 black inline">I can do both!</h1>
+                <div className="back1">
+                    <div className="service-page">
+                        <div className="left2">
+                            {this.state.data.map(element => (
+                                <div key={element.index}>
+                                    <button onClick={() => this.select(element.index)} className="btn2">
+                                        <div className="inbtn2">
+                                            {element.title}
+                                            {element.icon != null ? <img className="icon1 eicon" alt={element.icon.alt} src={element.icon.path} /> : <div></div>}
+                                        </div>
+                                    </button>
                                 </div>
-                            ) : this.render_profile()}
+                            ))}
                         </div>
-                        <img className="human-char" src="/images/richie_edited.png" />
+                        <div className="right2 glass">
+                            <div className="screen">
+                                {this.state.selected == null ? (
+                                    <div>
+                                        <h1 className="text21">are you looking for </h1>
+                                        <h1 className="text21 lg2 black inline">Front-end</h1>
+                                        <h1 className="text21 inline">guy ?</h1>
+                                        <h1 className="text21">or maybe a</h1>
+                                        <h1 className="text21 lg2 black inline">Back-end</h1>
+                                        <h1 className="text21 inline">guy ?</h1>
+                                        <h1 className="text21 inline">Well, </h1>
+                                        <h1 className="text21 lg2 black inline">I can do both!</h1>
+                                    </div>
+                                ) : this.render_profile()}
+                            </div>
+                            <img className="human-char" src="/images/richie_edited.png" />
+                        </div>
                     </div>
                 </div>
             </React.Fragment>

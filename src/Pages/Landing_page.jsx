@@ -6,6 +6,8 @@ import "../styles/glass.css";
 import "../styles/text/text1.css";
 import "../styles/button.css";
 
+import { NavLink } from 'react-router-dom'
+
 class LandingPage extends React.Component {
     render() {
         return (
@@ -23,8 +25,8 @@ class LandingPage extends React.Component {
                                 <h1 className="text1 lg inline">?</h1>
                             </div>
                             <div className="three">
-                                <button className="btn1 glass">Contact</button>
-                                <button className="btn1 glass">See more</button>
+                                <button className="btn1 glass"><NavLink className="navlink" to="/contact">Contact</NavLink></button>
+                                <button className="btn1 glass"><NavLink className="navlink" to="/services">See more</NavLink></button>
                             </div>
                         </div>
                         <div className="text-block right">
