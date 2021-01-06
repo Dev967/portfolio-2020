@@ -18,13 +18,13 @@ class Navigation extends React.Component {
             <Fab
                 mainButtonStyles={{
                     backgroundColor: "black",
-                    width: "5vw",
-                    height: "5vw"
+                    width: "calc(2em + 2vw)",
+                    height: "calc(2em + 2vw)"
                 }}
                 icon={<img className="shuttle-icon" src={icons.Shuttle.path} alt={icons.Shuttle.alt} />}
                 event={"hover"}
                 style={{
-                    top: 10,
+                    bottom: 70,
                     right: 10
                 }}
             >

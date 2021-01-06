@@ -25,6 +25,9 @@
         display: flex;
         justify-content: center;
     }
+    .btn3{
+        font-size: calc(1em + 1vw);
+    }
 }
 
 /*

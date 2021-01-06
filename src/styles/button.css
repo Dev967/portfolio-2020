@@ -54,9 +54,9 @@
     background-color: black;
     /* align-self: center; */
     padding: calc(0.3em + 0.1vw);
-    font-size: calc(0.5em + 1vw);
+    margin-bottom: calc(1em + 1vw);
+    font-size: calc(1em + 0.8vw);
     border-radius: 8px;
-
     border-top: 1px solid white;
     border-left: 1px solid white;
 }

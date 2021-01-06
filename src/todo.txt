@@ -1,20 +1,9 @@
 blog page
-certiicate page
-contact page
-project page
-skill page
-main page
 
-MP  => Skills
-    => Contact
-    => Projects
-    => About => Certificate
-             => blog page
-
-
-add certificates
 mobile site
+add certificates
 add links
-define button styles
-change font
 add tetris
+write BIO
+
+to something to get rid of extra space in mobile version

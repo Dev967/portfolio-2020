@@ -1,17 +1,28 @@
 .credits-page{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .screen6{
-    margin-top: calc(2em + 2vw);
-    width: 70vw;
-    height: calc(100vh - calc(2em + 2vw));
-    border-radius: 10px;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
+    height: 100vh;
     align-items: center;
 }
 
-.left6, .right6{
+
+
+/* .left6, .right6{
     text-align: center;
+} */
+
+.credit-stack{
+    text-align: center;
+    margin-top: calc(0.5em + 0.2vw);
+}
+
+.one, .two{
+    border-radius: 10px;
+    padding: calc(1em + 1.5vw);
 }

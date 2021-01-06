@@ -1,5 +1,3 @@
-
-
 .main-container{
     height: 85vh;
     width: 90vw;
@@ -21,9 +19,18 @@
 }
 
 .right{    
-    width: calc(5em + 10vw);
+    width: calc(7em + 10vw);
     height: auto;
     align-self: center;
+}
+
+.right div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading1{
+    width: calc(1em + 2vw);
 }
 
 .three {

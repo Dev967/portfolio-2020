@@ -15,29 +15,48 @@
         display: flex;
         width: 100vw;
         height: 85vh;
+        align-content: flex-start;
         /* align-content: center;
         align-items: center; */
     }
     
+    .human-char{
+        display: none;
+    }
+
+    .title1{
+        font-size: calc(1.5em + 1vw);
+    }
+    
+    .skills .icon2{
+        font-size: calc(1.5em + 1.5vw);
+    }
+
+    .text2{
+        font-size: calc(1em + 1vw);
+    }
+
     .service-page .right2 .screen{
         /* align-self: center; */
+        width: 100%;
+        height: auto;
         padding: calc(2em + 2vw);
     }
     
-    .service-page .right2 .human-char{
+    /* .service-page .right2 .human-char{
         height: calc(10em + 45vw);
-    }
+    } */
 
     .service-page .left2 .btn2 .inbtn2 .eicon{
         display: none;
     }
     
     .text21{
-        font-size: calc(1.1em + 1.1vw);
+        font-size: calc(1.5em + 1.5vw);
     }
 
     .lg2{
-    font-size: calc(1.3em + 1.3vw);
+    font-size: calc(2em + 2vw);
     color: black;
     }
 }

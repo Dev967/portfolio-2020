@@ -2,7 +2,7 @@
     display: inline-block;
 }
 .text4{
-    font-size: calc(0.8em + 2vw);
+    font-size: calc(0.8em + 1.8vw);
     color: white;
     /* margin: 0.4em 0.1em 0em 0.1em; */
 }

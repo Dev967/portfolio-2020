@@ -83,18 +83,6 @@ class ServicePage extends React.Component {
             <React.Fragment>
                 <div className="back1">
                     <div className="service-page">
-                        <div className="left2">
-                            {this.state.data.map(element => (
-                                <div key={element.index}>
-                                    <button onClick={() => this.select(element.index)} className="btn2">
-                                        <div className="inbtn2">
-                                            {element.title}
-                                            {element.icon != null ? <img className="icon1 eicon" alt={element.icon.alt} src={element.icon.path} /> : <div></div>}
-                                        </div>
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
                         <div className="right2 glass">
                             <div className="screen">
                                 {this.state.selected == null ? (
@@ -111,6 +99,19 @@ class ServicePage extends React.Component {
                                 ) : this.render_profile()}
                             </div>
                             <img className="human-char" src="/images/richie_edited.png" />
+                        </div>
+
+                        <div className="left2">
+                            {this.state.data.map(element => (
+                                <div key={element.index}>
+                                    <button onClick={() => this.select(element.index)} className="btn2">
+                                        <div className="inbtn2">
+                                            {element.title}
+                                            {element.icon != null ? <img className="icon1 eicon" alt={element.icon.alt} src={element.icon.path} /> : <div></div>}
+                                        </div>
+                                    </button>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

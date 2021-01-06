@@ -1,0 +1,29 @@
+@media only screen and (max-width: 690px){
+    .right div{
+        display: block;
+    }
+    .left{
+        padding-left: calc(1em + 1vw);
+        padding-top: calc(1em + 1vw);
+    }
+    .three{
+        margin-top: calc(1em + 1vw);
+        display: block;
+        width: 30vw;
+        text-align: center;
+    }
+    .btn1{
+        margin-top: calc(1em + 1vw);
+        width: calc(8em + 8vw);
+        font-size: calc(1em + 3vw);
+    }
+    .text1{
+        font-size: calc(2em + 3vw);
+    }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1240px){
+    .right div{
+        display: block;
+    }
+}

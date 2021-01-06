@@ -8,10 +8,9 @@
 }
 
 .heading1{
-    font-size: calc(0.1em + 1vw);
+    font-size: calc(0.1em + 0.1vw);
     color: white;
-    width: auto;
-    height: calc(1em + 1.5vw);
+    text-align: center;
 }
 
 .black{
@@ -28,6 +27,5 @@
 }
 
 .xxl{
-    font-size: calc(4em + 8vw);
+    font-size: calc(6em + 8vw);
 }
-

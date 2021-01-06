@@ -30,11 +30,34 @@ class AboutPage extends React.Component {
                                 <Carousel {...properties}>
                                     <div className="screen1">
                                         <h1 className="text3">What's better than front-end?</h1>
-                                        <h1 className="text3 lg">It's Backe-end!</h1>
+                                        <h1 className="text3 lg">It's Back-end!</h1>
                                     </div>
                                     <div className="screen1">
-                                        <h1 className="text3">Finally!</h1>
-                                        <h1 className="text3 lg">It's working!</h1>
+                                        <h1 className="text3">I turn coffee into </h1>
+                                        <h1 className="text3 lg">Code</h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3 lg">Just Code It</h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3 lg">!False </h1>
+                                        <h1 className="text3">It's funny because it's True</h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3">Roses are red, </h1>
+                                        <h1 className="text3">Violets are blue, </h1>
+                                        <h1 className="text3">Unexpected Token on line 32 </h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3 lg">1 + 1 = 10 </h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3">There is no place like</h1>
+                                        <h1 className="text3 lg">127.0.0.1</h1>
+                                    </div>
+                                    <div className="screen1">
+                                        <h1 className="text3 lg">My code works </h1>
+                                        <h1 className="text3">(I have no idea why)</h1>
                                     </div>
                                 </Carousel>
                             </div>

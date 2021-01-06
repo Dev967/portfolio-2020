@@ -5,6 +5,7 @@ import "../styles/pages/Landing_page.css";
 import "../styles/glass.css";
 import "../styles/text/text1.css";
 import "../styles/button.css";
+import "../styles/media-queries/Landing_page_query.css";
 
 import { NavLink } from 'react-router-dom'
 
@@ -36,7 +37,7 @@ class LandingPage extends React.Component {
                             </div>
                             <div>
                                 <h1 className="heading1 inline xxl black">2</h1>
-                                <h1 className="heading1 inline xxl">1</h1>
+                                <h1 className="heading1 inline xxl number-one">1</h1>
                             </div>
                         </div>
                     </div>
