@@ -29,4 +29,19 @@
 .right5{
     width: 60vw;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right5 .about-text-block{
+    width: 90%;
+    border-radius: 10px;
+padding: calc(0.5em + 1vw);
+}
+
+.right5 .about-text-block p{
+    margin-bottom: calc(0.1em + 0.1vw);
+    padding: calc(0.1em + 0.2vw);
 }

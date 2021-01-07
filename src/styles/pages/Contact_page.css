@@ -3,7 +3,7 @@
 }
 
 .follow-me{
-    padding-top:calc(1em + 1vw);
+     padding-top:calc(1em + 1vw);
      padding-bottom: calc(0.1em + 0.1vw);
      display: flex;
      justify-content: space-evenly;
@@ -29,11 +29,12 @@
     padding: 0 calc(0.1em + 0.1vw) 0 calc(0.2em + 0.5vw);
 }
 
-.name-in, .message-in{
+/* .name-in, .message-in{
     width: 97%;
     border: none;
     border-radius: 10px;
     color: white;
+    font-family: 'Nova Round', cursive;
 }
 .name-in:focus, .message-in:focus{
     outline: none;
@@ -54,9 +55,22 @@
     padding: 1em 0 0 0.5em;
     margin: 0 0 2em 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} 
 
 .send-in{
     float: right;
+    font-size: calc(1em + 1vw);
+}
+*/
+.texts-block{
+    height: calc(100vh - calc(6em + 5vw));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texts p{
+    border-radius: 10px;
+    padding: calc(1em + 0.5vw);
+    margin: calc(1em + 0.5vw);
     font-size: calc(1em + 1vw);
 }

@@ -29,14 +29,22 @@ class ProjectsPage extends React.Component {
                                     {project.technology.map(e => <img className="icon2" src={e.path} alt={e.alt} />)}
                                 </div>
                                 <div className="buttons">
-                                    <button className="btn3 inbtn2">
-                                        See code
-                                        <img className="icon3" src={icon.Code.path} alt={icon.Code.alt} />
-                                    </button>
-                                    <button className="btn3 inbtn2">
-                                        Pay a visit
-                                        <img className="icon3" src={icon.Web.path} alt={icon.Web.alt} />
-                                    </button>
+                                    {
+                                        project.code !== "" ? (
+                                            <button className="btn3 inbtn2" onClick={() => window.open(project.code)}>
+                                                See code
+                                                <img className="icon3" src={icon.Code.path} alt={icon.Code.alt} />
+                                            </button>
+                                        ) : null
+                                    }
+                                    {
+                                        project.link !== "" ? (
+                                            <button className="btn3 inbtn2" onClick={() => window.open(project.link)}>
+                                                Pay a visit
+                                                <img className="icon3" src={icon.Web.path} alt={icon.Web.alt} />
+                                            </button>
+                                        ) : null
+                                    }
                                 </div>
                             </div>
                         </div>)}

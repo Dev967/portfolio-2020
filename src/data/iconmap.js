@@ -78,31 +78,30 @@ const icons = {
     Github: {
         path: "icons/icons8-github-50.png",
         alt: "check my projects on github",
-        link: ""
+        link: "https://github.com/dev967"
     },
     Linkedin: {
         path: "icons/icons8-linkedin-2-50.png",
         alt: "connect to me on linked in",
-        link: ""
+        link: "https://www.linkedin.com/in/anand-parmar-a5026b187/"
     },
     Twitter: {
         path: "icons/icons8-twitter-50.png",
         alt: "follow me on twitter",
-        link: ""
-    },
-    Whatsapp: {
-        path: "icons/icons8-whatsapp-50.png",
-        alt: "contact me on whatsapp",
-        link: ""
+        link: "https://twitter.com/profane_coder"
     },
     Gmail: {
         path: "icons/icons8-gmail-48.png",
         alt: "send me an email",
-        link: ""
+        link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anandparmar967@gmail.com"
     },
     Shuttle: {
         path: "icons/icons8-sci-fi-50.png",
         alt: "Navigation button"
+    },
+    Certificate: {
+        path: "icons/icons8-certificate-64.png",
+        alt: "Certificate icon"
     }
 }
 export default icons;

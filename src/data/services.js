@@ -22,7 +22,13 @@ const skills = [
             icons.Chai
         ],
         word: "I am agile and can work with different Packages",
-        certificates: [],
+        certificates: [
+            {
+                link: "https://coursera.org/share/262eeb0bc018dc0002beae790360225c",
+                path: icons.Certificate.path,
+                alt: icons.Certificate.alt
+            }
+        ],
         index: 0
     },
     {
@@ -48,7 +54,13 @@ const skills = [
         testing: [],
         others: [],
         word: "Leanring data Scince using Python",
-        certificates: [],
+        certificates: [
+            {
+                link: "https://coursera.org/share/45e58be2d8e420ba11954a503514ab9c",
+                path: icons.Certificate.path,
+                alt: icons.Certificate.alt
+            }
+        ],
         index: 2
     },
 

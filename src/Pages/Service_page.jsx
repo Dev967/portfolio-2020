@@ -66,8 +66,7 @@ class ServicePage extends React.Component {
                         <h1 className="title1">Certifications</h1>
                         <div className="skills glass2">{
                             profile.certificates
-                                .map(e => <img className="icon2" alt={e.alt} src={e.path} />)}
-
+                                .map(e => <img onClick={() => window.open(e.link)} className="icon2" alt={e.alt} src={e.path} style={{ cursor: "pointer" }} />)}
                         </div>
                     </div>
                 ) : <div></div>}

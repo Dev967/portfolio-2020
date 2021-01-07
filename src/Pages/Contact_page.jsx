@@ -8,6 +8,9 @@ import "../styles/media-queries/Contact_page_query.css";
 
 import icon from "../data/iconmap";
 
+import { Server } from "smtpjs"
+
+
 class ContactPage extends React.Component {
     render() {
         return (
@@ -23,16 +26,25 @@ class ContactPage extends React.Component {
                                     <img className="icon2" onClick={() => window.open(icon.Github.link)} src={icon.Github.path} alt={icon.Github.alt} />
                                     <img className="icon2" onClick={() => window.open(icon.Twitter.link)} src={icon.Twitter.path} alt={icon.Twitter.alt} />
                                     <img className="icon2" onClick={() => window.open(icon.Linkedin.link)} src={icon.Linkedin.path} alt={icon.Linkedin.alt} />
-                                    <img className="icon2" onClick={() => window.open(icon.Whatsapp.link)} src={icon.Whatsapp.path} alt={icon.Whatsapp.alt} />
                                     <img className="icon2" onClick={() => window.open(icon.Gmail.link)} src={icon.Gmail.path} alt={icon.Gmail.alt} />
                                 </div>
-                                <form action="#">
+                                <div className="texts-block">
+                                    <div className="texts">
+                                        <p className="glass2">
+                                            if you are an old fashioned guy like me you can call me at, +91 9685275197.
+                                    </p>
+                                        <p className="glass2">
+                                            If you are having troubles getting through Gmail you can use this to mail me, anandparmar967@Gmail.com.
+                                    </p>
+                                    </div>
+                                </div>
+                                {/* <form action="#">
                                     <input className="name-in glass2" type="text" placeholder="Name" required />
                                     <textarea className="message-in glass2" placeholder="Message" >
                                         Write your message here!
                                     </textarea>
                                     <input className="send-in btn3" type="submit" value="Send" required />
-                                </form>
+                                </form> */}
                             </div>
                         </div>
                     </div>

@@ -29,8 +29,8 @@
     width: calc(15em + 15vw);
     border-radius: 10px;
     padding: calc(2em + 2vw);
-    align-self: center;
-    padding-top: 0;
+    /* align-self: center; */
+    padding-top: calc(1em + 1vw);
     /* border: 2px solid black; */
 }
 

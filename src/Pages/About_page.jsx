@@ -63,9 +63,29 @@ class AboutPage extends React.Component {
                             </div>
                         </div>
                         <div className="right5">
-                            <p className="text3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quam nesciunt sequi, labore mollitia repellendus, error molestiae at nisi alias aperiam assumenda accusantium accusamus id adipisci incidunt minus totam.
+                            <div className="about-text-block glass2">
+                                <p className="text3">
+                                    Hello there,
                             </p>
+                                <p className="text3 black">
+                                    I am anand parmar, second student year at Symbiosis University of Applied Science, Indore.
+                            </p>
+                                <p className="text3">
+                                    I am trying to get an engineering degree in B.tech(CS).
+                            </p>
+                                <p className="text3 black">
+                                    I am a fresher and looking for Internships and part-time jobs at Indore.
+                            </p>
+                                <p className="text3">
+                                    I am very hard working and i have solid knowledge of latest trends and tools in field of computer science.
+                            </p>
+                                <p className="text3 black">
+                                    Hope we can wokr things out.
+                            </p>
+                                <p className="text3">
+                                    And also, i do freelancing for web projects you can find a way to contact me at contact page.
+                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .btn1{
     color: white;
     font-size: calc(0.7em + 2vw);
@@ -6,6 +10,7 @@
     background-color: black;
     border-top: 1px solid white;
     border-left: 1px solid white;
+    cursor: pointer;
 }
 
 .btn1:focus,
@@ -28,6 +33,7 @@
 
     border-top: 1px solid white;
     border-left: 1px solid white;
+    cursor: pointer;
 }
 
 .btn3{
@@ -42,6 +48,7 @@
 
     border-top: 1px solid white;
     border-left: 1px solid white;
+    cursor: pointer;
 }
 
 .inbtn2{
@@ -59,4 +66,5 @@
     border-radius: 8px;
     border-top: 1px solid white;
     border-left: 1px solid white;
+    cursor: pointer;
 }

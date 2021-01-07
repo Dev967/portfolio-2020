@@ -41,6 +41,7 @@
         width: 100%;
         height: auto;
         padding: calc(2em + 2vw);
+        align-self: center;
     }
     
     /* .service-page .right2 .human-char{
