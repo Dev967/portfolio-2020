@@ -10,16 +10,14 @@ import "../styles/media-queries/Projects_page_query.css";
 import projects from "../data/projects";
 import icon from "../data/iconmap";
 
-
 class ProjectsPage extends React.Component {
-
     state = {
         data: projects,
     }
 
     render() {
         return (
-            <div className="back1">
+            <div className="back1" >
                 <div className="projects-page">
                     <div className="left3">
                         {this.state.data.map(project => <div className="panel">
@@ -50,6 +48,7 @@ class ProjectsPage extends React.Component {
                         </div>)}
                     </div>
                     <div className="right3">
+                        {/* <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" onLoad={() => { this.setState({ loaded: true }); console.log("loaded") }} /> */}
                         <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" />
                     </div>
                 </div>

@@ -8,9 +8,6 @@ import "../styles/media-queries/Contact_page_query.css";
 
 import icon from "../data/iconmap";
 
-import { Server } from "smtpjs"
-
-
 class ContactPage extends React.Component {
     render() {
         return (
