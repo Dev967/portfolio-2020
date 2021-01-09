@@ -80,7 +80,7 @@ class AboutPage extends React.Component {
                                     I am very hard working and i have solid knowledge of latest trends and tools in field of computer science.
                             </p>
                                 <p className="text3 black">
-                                    Hope we can wokr things out.
+                                    Hope we can work things out.
                             </p>
                                 <p className="text3">
                                     And also, i do freelancing for web projects you can find a way to contact me at contact page.

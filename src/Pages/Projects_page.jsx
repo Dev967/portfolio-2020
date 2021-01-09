@@ -10,21 +10,36 @@ import "../styles/media-queries/Projects_page_query.css";
 import projects from "../data/projects";
 import icon from "../data/iconmap";
 
+import Loader from "react-loader-spinner";
+
 class ProjectsPage extends React.Component {
     state = {
         data: projects,
+        loaded: false
     }
 
     render() {
+        const style = this.state.loaded ? {} : { visibility: "hidden" }
+        const loader = <Loader
+            type="Puff"
+            color="black"
+            height={100}
+            width={100}
+            visible={!this.state.loaded}
+        />
+
         return (
             <div className="back1" >
-                <div className="projects-page">
+                <div className="loader">
+                    {loader}
+                </div>
+                <div className="projects-page" style={style}>
                     <div className="left3">
-                        {this.state.data.map(project => <div className="panel">
+                        {this.state.data.map((project, i) => <div key={i} className="panel">
                             <div className="glass inner-block">
                                 <h1 className="title2">{project.title}</h1>
                                 <div className="stack">
-                                    {project.technology.map(e => <img className="icon2" src={e.path} alt={e.alt} />)}
+                                    {project.technology.map((e, i) => <img key={i} className="icon2" src={e.path} alt={e.alt} />)}
                                 </div>
                                 <div className="buttons">
                                     {
@@ -48,8 +63,7 @@ class ProjectsPage extends React.Component {
                         </div>)}
                     </div>
                     <div className="right3">
-                        {/* <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" onLoad={() => { this.setState({ loaded: true }); console.log("loaded") }} /> */}
-                        <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" />
+                        <img className="hand-img" src="/images/9_Hands_Snow_globe (3).png" alt="test" onLoad={() => { this.setState({ loaded: true }) }} />
                     </div>
                 </div>
             </div>

@@ -9,12 +9,33 @@ import "../styles/media-queries/Landing_page_query.css";
 
 import { NavLink } from 'react-router-dom'
 
+import Loader from "react-loader-spinner";
+
 class LandingPage extends React.Component {
+    state = {
+        loaded: false
+    }
+
+    componentDidMount() {
+        this.setState({ loaded: true })
+    }
+
     render() {
+        const style = this.state.loaded ? {} : { visibility: "hidden" }
+        const loader = <Loader
+            type="Plane"
+            color="black"
+            height={100}
+            width={100}
+            visible={!this.state.loaded}
+        />
         return (
             <React.Fragment>
                 <div className="back1">
-                    <div className="glass main-container">
+                    <div className="loader">
+                        {loader}
+                    </div>
+                    <div className="glass main-container" style={style}>
                         <div className="text-block left">
                             <h3 className="text1 inline">It's  </h3>
                             <h1 className="text1 lg inline">2021</h1>

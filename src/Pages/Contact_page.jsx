@@ -8,14 +8,31 @@ import "../styles/media-queries/Contact_page_query.css";
 
 import icon from "../data/iconmap";
 
+import Loader from "react-loader-spinner";
+
 class ContactPage extends React.Component {
+    state = {
+        loaded: false
+    }
+
     render() {
+        const style = this.state.loaded ? {} : { visibility: "hidden" }
+        const loader = <Loader
+            type="Plane"
+            color="black"
+            height={100}
+            width={100}
+            visible={!this.state.loaded}
+        />
         return (
             <React.Fragment>
                 <div className="back1">
-                    <div className="contact-page">
+                    <div className="loader">
+                        {loader}
+                    </div>
+                    <div className="contact-page" style={style}>
                         <div className="left4">
-                            <img className="hand3" src="/images/29_Hand with phone_02.png" alt="hand with phone" />
+                            <img className="hand3" src="/images/29_Hand with phone_02.png" alt="hand with phone" onLoad={() => this.setState({ loaded: true })} />
                         </div>
                         <div className="right4 ">
                             <div className="form glass">

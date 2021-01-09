@@ -10,6 +10,7 @@ import "../styles/text/text2.css";
 import "../styles/icon.css";
 import "../styles/media-queries/Service_page_query.css";
 
+import Loader from "react-loader-spinner";
 
 class ServicePage extends React.Component {
     constructor(props) {
@@ -19,6 +20,7 @@ class ServicePage extends React.Component {
     state = {
         data: skills,
         selected: null,
+        loaded: false
     }
 
     select(index) {
@@ -34,7 +36,7 @@ class ServicePage extends React.Component {
                         <h1 className="title1">Featured</h1>
                         <div className="skills glass2">{
                             profile.featured
-                                .map(e => <img className="icon2" alt={e.alt} src={e.path} />)}
+                                .map((e, i) => <img key={i} className="icon2" alt={e.alt} src={e.path} />)}
                         </div>
                     </div>
                 ) : <div></div>}
@@ -44,7 +46,7 @@ class ServicePage extends React.Component {
                         <h1 className="title1">Testing</h1>
                         <div className="skills glass2">{
                             profile.testing
-                                .map(e => <img className="icon2" alt={e.alt} src={e.path} />)}
+                                .map((e, i) => <img key={i} className="icon2" alt={e.alt} src={e.path} />)}
 
                         </div>
                     </div>
@@ -55,7 +57,7 @@ class ServicePage extends React.Component {
                         <h1 className="title1">Other</h1>
                         <div className="skills glass2">{
                             profile.others
-                                .map(e => <img className="icon2" alt={e.alt} src={e.path} />)}
+                                .map((e, i) => <img key={i} className="icon2" alt={e.alt} src={e.path} />)}
 
                         </div>
                     </div>
@@ -66,7 +68,7 @@ class ServicePage extends React.Component {
                         <h1 className="title1">Certifications</h1>
                         <div className="skills glass2">{
                             profile.certificates
-                                .map(e => <img onClick={() => window.open(e.link)} className="icon2" alt={e.alt} src={e.path} style={{ cursor: "pointer" }} />)}
+                                .map((e, i) => <img key={i} onClick={() => window.open(e.link)} className="icon2" alt={e.alt} src={e.path} style={{ cursor: "pointer" }} />)}
                         </div>
                     </div>
                 ) : <div></div>}
@@ -78,10 +80,19 @@ class ServicePage extends React.Component {
     }
 
     render() {
+        const style = this.state.loaded ? {} : { visibility: "hidden" }
+        const loader = <Loader
+            type="Plane"
+            color="rgba(241, 241, 241, 0.4)"
+            height={100}
+            width={100}
+            visible={!this.state.loaded}
+        />
         return (
             <React.Fragment>
                 <div className="back1">
-                    <div className="service-page">
+                    {loader}
+                    <div className="service-page" style={style}>
                         <div className="right2 glass">
                             <div className="screen">
                                 {this.state.selected == null ? (
@@ -97,7 +108,7 @@ class ServicePage extends React.Component {
                                     </div>
                                 ) : this.render_profile()}
                             </div>
-                            <img className="human-char" src="/images/richie_edited.png" />
+                            <img className="human-char" alt="human character" src="/images/richie_edited.png" onLoad={() => this.setState({ loaded: true })} />
                         </div>
 
                         <div className="left2">

@@ -11,7 +11,7 @@ import Navigation from "./Navigation";
 
 import "./styles/body.css";
 
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class App extends React.Component {
       <BrowserRouter>
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
-      </style>
+        </style>
         <div>
           <Navigation />
           <Switch>
@@ -29,7 +29,6 @@ class App extends React.Component {
             <Route path="/Contact" component={ContactPage} exact />
             <Route path="/AboutMe" component={AboutPage} exact />
             <Route path="/credits" component={CreditsPage} exact />
-            <Route component={<div>Not found</div>} />
 
           </Switch>
         </div>
