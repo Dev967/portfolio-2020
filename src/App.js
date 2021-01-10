@@ -12,17 +12,38 @@ import Navigation from "./Navigation";
 import "./styles/body.css";
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { PageTransition } from '@steveeeie/react-page-transition';
+
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
-        </style>
-        <div>
-          <Navigation />
-          <Switch>
+        <Navigation />
+        <Route
+          render={({ location }) => {
+            return (
+              <PageTransition
+                preset="glueBottomFromTop"
+                // preset="moveToBottomScaleUp"
+                // preset="slide"
+                // preset="fadeFromRight"
+                // preset="moveToLeftFromRight"
+                transitionKey={location.pathname}
+              >
+                <Switch location={location}>
+                  <Route path="/" component={LandingPage} exact />
+                  <Route path="/Services" component={ServicePage} exact />
+                  <Route path="/Projects" component={ProjectsPage} exact />
+                  <Route path="/Contact" component={ContactPage} exact />
+                  <Route path="/AboutMe" component={AboutPage} exact />
+                  <Route path="/credits" component={CreditsPage} exact />
+                </Switch>
+              </PageTransition>
+            );
+          }}
+        />
+        {/* <Switch>
             <Route path="/" component={LandingPage} exact />
             <Route path="/Services" component={ServicePage} exact />
             <Route path="/Projects" component={ProjectsPage} exact />
@@ -30,8 +51,7 @@ class App extends React.Component {
             <Route path="/AboutMe" component={AboutPage} exact />
             <Route path="/credits" component={CreditsPage} exact />
 
-          </Switch>
-        </div>
+          </Switch> */}
       </BrowserRouter>
     );
   }

@@ -12,13 +12,14 @@ import Loader from "react-loader-spinner";
 
 class ContactPage extends React.Component {
     state = {
-        loaded: false
+        loaded: false,
+        mobile: (window.innerWidth > 600) ? false : true
     }
 
     render() {
         const style = this.state.loaded ? {} : { visibility: "hidden" }
         const loader = <Loader
-            type="Plane"
+            type="Puff"
             color="black"
             height={100}
             width={100}
@@ -32,7 +33,10 @@ class ContactPage extends React.Component {
                     </div>
                     <div className="contact-page" style={style}>
                         <div className="left4">
-                            <img className="hand3" src="/images/29_Hand with phone_02.png" alt="hand with phone" onLoad={() => this.setState({ loaded: true })} />
+                            {
+                                this.state.mobile ? null
+                                    : <img className="hand3" src="/images/29_Hand with phone_02.png" alt="hand with phone" onLoad={() => this.setState({ loaded: true })} />
+                            }
                         </div>
                         <div className="right4 ">
                             <div className="form glass">

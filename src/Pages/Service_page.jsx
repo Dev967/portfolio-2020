@@ -20,7 +20,8 @@ class ServicePage extends React.Component {
     state = {
         data: skills,
         selected: null,
-        loaded: false
+        loaded: false,
+        mobile: (window.innerWidth > 600) ? false : true
     }
 
     select(index) {
@@ -82,8 +83,8 @@ class ServicePage extends React.Component {
     render() {
         const style = this.state.loaded ? {} : { visibility: "hidden" }
         const loader = <Loader
-            type="Plane"
-            color="rgba(241, 241, 241, 0.4)"
+            type="Puff"
+            color="black"
             height={100}
             width={100}
             visible={!this.state.loaded}
@@ -91,7 +92,9 @@ class ServicePage extends React.Component {
         return (
             <React.Fragment>
                 <div className="back1">
-                    {loader}
+                    <div className="loader">
+                        {loader}
+                    </div>
                     <div className="service-page" style={style}>
                         <div className="right2 glass">
                             <div className="screen">
@@ -108,7 +111,9 @@ class ServicePage extends React.Component {
                                     </div>
                                 ) : this.render_profile()}
                             </div>
-                            <img className="human-char" alt="human character" src="/images/richie_edited.png" onLoad={() => this.setState({ loaded: true })} />
+                            {this.state.mobile ? null
+                                : <img className="human-char" alt="human character" src="/images/richie_edited.png" onLoad={() => this.setState({ loaded: true })} />
+                            }
                         </div>
 
                         <div className="left2">

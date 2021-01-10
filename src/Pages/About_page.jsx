@@ -9,6 +9,8 @@ import "../styles/media-queries/About_page_query.css";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
+import { Link } from "react-router-dom";
+
 class AboutPage extends React.Component {
     render() {
         const properties = {
@@ -44,9 +46,9 @@ class AboutPage extends React.Component {
                                         <h1 className="text3">It's funny because it's True</h1>
                                     </div>
                                     <div className="screen1">
-                                        <h1 className="text3">Roses are red, </h1>
+                                        <h1 className="text3" style={{ color: "black" }}>Roses are red, </h1>
                                         <h1 className="text3">Violets are blue, </h1>
-                                        <h1 className="text3">Unexpected Token on line 32 </h1>
+                                        <h1 className="text3" style={{ color: "black" }}>Unexpected Token on line 32 </h1>
                                     </div>
                                     <div className="screen1">
                                         <h1 className="text3 lg">1 + 1 = 10 </h1>
@@ -68,13 +70,14 @@ class AboutPage extends React.Component {
                                     Hello there,
                             </p>
                                 <p className="text3 black">
-                                    I am anand parmar, second student year at Symbiosis University of Applied Science, Indore.
+                                    I am anand parmar, a second student year at Symbiosis University of Applied Science, Indore.
                             </p>
                                 <p className="text3">
-                                    I am trying to get an engineering degree in B.tech(CS).
+                                    {/* I am trying to get an engineering degree in B.tech(CS). */}
+                                    I am studying engineering for computer science.
                             </p>
                                 <p className="text3 black">
-                                    I am a fresher and looking for Internships and part-time jobs at Indore.
+                                    I am a fresher and looking for Internships and part-time jobs in Indore.
                             </p>
                                 <p className="text3">
                                     I am very hard working and i have solid knowledge of latest trends and tools in field of computer science.
@@ -83,7 +86,7 @@ class AboutPage extends React.Component {
                                     Hope we can work things out.
                             </p>
                                 <p className="text3">
-                                    And also, i do freelancing for web projects you can find a way to contact me at contact page.
+                                    And also, i do freelancing for web projects you can  contact me at {<Link to="/contact">contact page</Link>}.
                             </p>
                             </div>
                         </div>

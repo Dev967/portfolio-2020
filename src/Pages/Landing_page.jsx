@@ -23,7 +23,7 @@ class LandingPage extends React.Component {
     render() {
         const style = this.state.loaded ? {} : { visibility: "hidden" }
         const loader = <Loader
-            type="Plane"
+            type="Puff"
             color="black"
             height={100}
             width={100}
@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
                             </div>
                             <div className="three">
                                 <button className="btn1 glass"><NavLink className="navlink" to="/contact">Contact</NavLink></button>
-                                <button className="btn1 glass"><NavLink className="navlink" to="/services">See more</NavLink></button>
+                                <button className="btn1 glass"><NavLink className="navlink" to="/services">What can i do?</NavLink></button>
                             </div>
                         </div>
                         <div className="text-block right">
