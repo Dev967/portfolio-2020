@@ -16,12 +16,16 @@ class ServicePage extends React.Component {
     constructor(props) {
         super(props);
         this.select = this.select.bind(this)
-    }
-    state = {
-        data: skills,
-        selected: null,
-        loaded: false,
-        mobile: (window.innerWidth > 600) ? false : true
+        this.state = {
+            data: skills,
+            selected: null,
+            loaded: false,
+            mobile: false
+        }
+        if (window.screen.width <= 600) {
+            this.setState({ mobile: true, loaded: true })
+        }
+        else this.setState({ mobile: false })
     }
 
     select(index) {
@@ -80,7 +84,9 @@ class ServicePage extends React.Component {
         )
     }
 
+
     render() {
+        window.addEventListener("resize", () => console.log("RESIZED"))
         const style = this.state.loaded ? {} : { visibility: "hidden" }
         const loader = <Loader
             type="Puff"
@@ -89,6 +95,7 @@ class ServicePage extends React.Component {
             width={100}
             visible={!this.state.loaded}
         />
+
         return (
             <React.Fragment>
                 <div className="back1">
@@ -111,9 +118,11 @@ class ServicePage extends React.Component {
                                     </div>
                                 ) : this.render_profile()}
                             </div>
+
                             {this.state.mobile ? null
-                                : <img className="human-char" alt="human character" src="/images/richie_edited.png" onLoad={() => this.setState({ loaded: true })} />
-                            }
+                                : (
+                                    <img className="human-char" alt="human character" src="/images/richie_edited.png" onLoad={() => this.setState({ loaded: true })} />
+                                )}
                         </div>
 
                         <div className="left2">

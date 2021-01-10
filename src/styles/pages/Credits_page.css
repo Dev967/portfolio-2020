@@ -22,7 +22,7 @@
     margin-top: calc(0.5em + 0.2vw);
 }
 
-.one, .two{
+.credits-page-one, .credits-page-two{
     border-radius: 10px;
     padding: calc(1em + 1.5vw);
 }

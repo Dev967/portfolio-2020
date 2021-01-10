@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
                             </div>
                             <div className="three">
                                 <button className="btn1 glass"><NavLink className="navlink" to="/contact">Contact</NavLink></button>
-                                <button className="btn1 glass"><NavLink className="navlink" to="/services">What can i do?</NavLink></button>
+                                <button className="btn1 glass"><NavLink className="navlink" to="/services">Services</NavLink></button>
                             </div>
                         </div>
                         <div className="text-block right">

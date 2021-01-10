@@ -13,7 +13,7 @@ class CreditsPage extends React.Component {
                 <div className="back1">
                     <div className="credits-page">
                         <div className="screen6">
-                            <div className="one glass2">
+                            <div className="credits-page-one glass2">
                                 <div className="credit-stack">
                                     <h1 className="text4 acenter">Human character</h1>
                                     <h1 className="text4 black acenter"><a href="https://wannathis.one/humans">wannathis.one</a></h1>
@@ -36,7 +36,7 @@ class CreditsPage extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="two glass2">
+                            <div className="credits-page-two glass2">
                                 <div className="credit-stack">
                                     <h1 className="text4 acenter">Carousel</h1>
                                     <h1 className="text4 black acenter"><a href="https://github.com/brainhubeu/react-carousel">brainhubeu</a></h1>

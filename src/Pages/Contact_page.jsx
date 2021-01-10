@@ -11,9 +11,16 @@ import icon from "../data/iconmap";
 import Loader from "react-loader-spinner";
 
 class ContactPage extends React.Component {
-    state = {
-        loaded: false,
-        mobile: (window.innerWidth > 600) ? false : true
+    constructor(props) {
+        super(props);
+        this.state = {
+            loaded: false,
+            mobile: false
+        }
+        if (window.screen.width <= 600) {
+            this.setState({ mobile: true, loaded: true })
+        }
+        else this.setState({ mobile: false })
     }
 
     render() {
@@ -56,13 +63,6 @@ class ContactPage extends React.Component {
                                     </p>
                                     </div>
                                 </div>
-                                {/* <form action="#">
-                                    <input className="name-in glass2" type="text" placeholder="Name" required />
-                                    <textarea className="message-in glass2" placeholder="Message" >
-                                        Write your message here!
-                                    </textarea>
-                                    <input className="send-in btn3" type="submit" value="Send" required />
-                                </form> */}
                             </div>
                         </div>
                     </div>
