@@ -24,7 +24,7 @@ class Navigation extends React.Component {
                 icon={<img className="shuttle-icon" src={icons.Shuttle.path} alt={icons.Shuttle.alt} />}
                 event={"hover"}
                 style={{
-                    bottom: 70,
+                    bottom: 100,
                     right: 10
                 }}
             >

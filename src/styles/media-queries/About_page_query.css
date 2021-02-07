@@ -1,6 +1,7 @@
 @media only screen and (max-width: 650px){
     .about-page{
         display: block;
+        padding-bottom: 5em;
     }
     .left5{
         width: 100vw;

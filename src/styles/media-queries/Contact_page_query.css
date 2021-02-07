@@ -1,4 +1,10 @@
 @media screen and (min-width:0px) and (max-width: 690px){
+    .form{
+        height: calc(100vh - calc(7em + 2vw));
+    }
+    .contact-page{
+        padding-bottom: 5em;
+    }
     .icon2{
         width: calc(2em + 2vw);
         height: calc(2em + 2vw);

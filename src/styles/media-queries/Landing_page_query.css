@@ -1,10 +1,17 @@
 @media only screen and (max-width: 690px){
+    .main-container{
+        padding-bottom: 5rem;   
+    }
     .right div{
         display: block;
     }
     .left{
         padding-left: calc(1em + 1vw);
-        padding-top: calc(1em + 1vw);
+        padding-top:0;
+        /* padding-top: calc(1em + 1vw); */
+    }
+    .right{
+        align-self: start;
     }
     .three{
         margin-top: calc(1em + 1vw);
