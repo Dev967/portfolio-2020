@@ -11,7 +11,7 @@ import Navigation from "./Navigation";
 
 import "./styles/body.css";
 
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, DefaultRoute } from 'react-router-dom';
 import { PageTransition } from '@steveeeie/react-page-transition';
 
 
@@ -33,10 +33,8 @@ class App extends React.Component {
               >
                 <Switch location={location}>
 
+                  <DefaultRoute handler={LandingPage} />
                   <Route path="/" component={LandingPage} exact />
-                  <Route exact path="/">
-                    <Redirect to="/" />
-                  </Route>
                   <Route path="/Services" component={ServicePage} exact />
                   <Route path="/Projects" component={ProjectsPage} exact />
                   <Route path="/Contact" component={ContactPage} exact />
