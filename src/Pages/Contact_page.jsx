@@ -13,17 +13,23 @@ import Loader from "react-loader-spinner";
 class ContactPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            loaded: false,
-            mobile: false
-        }
+        // this.state = {
+        //     loaded: false,
+        //     mobile: false
+        // }
         if (window.screen.width <= 600) {
-            this.setState({ mobile: true, loaded: true })
+            this.state = {
+                mobile: true,
+                loaded: true
+            }
+            // this.setState({ mobile: true, loaded: true })
         }
-        else this.setState({ mobile: false })
+        // else this.setState({ mobile: false })
+        else this.state = { mobile: false, loaded: false }
     }
 
     render() {
+        console.log(this.state.mobile)
         const style = this.state.loaded ? {} : { visibility: "hidden" }
         const loader = <Loader
             type="Puff"

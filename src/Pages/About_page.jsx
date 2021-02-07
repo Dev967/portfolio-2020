@@ -51,7 +51,7 @@ class AboutPage extends React.Component {
                                         <h1 className="text3" style={{ color: "black" }}>Unexpected Token on line 32 </h1>
                                     </div>
                                     <div className="screen1">
-                                        <h1 className="text3 lg">1 + 1 = 10 </h1>
+                                        <h1 className="text3 lg">1 + 0 = 10 </h1>
                                     </div>
                                     <div className="screen1">
                                         <h1 className="text3">There is no place like</h1>
@@ -70,7 +70,7 @@ class AboutPage extends React.Component {
                                     Hello there,
                             </p>
                                 <p className="text3 black">
-                                    I am anand parmar, a second student year at Symbiosis University of Applied Science, Indore.
+                                    I am anand parmar, a second year student at Symbiosis University of Applied Science, Indore.
                             </p>
                                 <p className="text3">
                                     {/* I am trying to get an engineering degree in B.tech(CS). */}

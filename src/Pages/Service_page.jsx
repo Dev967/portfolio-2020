@@ -16,16 +16,20 @@ class ServicePage extends React.Component {
     constructor(props) {
         super(props);
         this.select = this.select.bind(this)
-        this.state = {
-            data: skills,
-            selected: null,
-            loaded: false,
-            mobile: false
-        }
+        // this.state = {
+        // data: skills,
+        // selected: null,
+        //     loaded: false,
+        //     mobile: false
+        // }
         if (window.screen.width <= 600) {
-            this.setState({ mobile: true, loaded: true })
+            this.state = {
+                mobile: true, loaded: true, data: skills, selected: null,
+            }
         }
-        else this.setState({ mobile: false })
+        else this.state = {
+            mobile: false, loaded: false, data: skills, selected: null,
+        }
     }
 
     select(index) {

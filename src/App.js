@@ -43,15 +43,6 @@ class App extends React.Component {
             );
           }}
         />
-        {/* <Switch>
-            <Route path="/" component={LandingPage} exact />
-            <Route path="/Services" component={ServicePage} exact />
-            <Route path="/Projects" component={ProjectsPage} exact />
-            <Route path="/Contact" component={ContactPage} exact />
-            <Route path="/AboutMe" component={AboutPage} exact />
-            <Route path="/credits" component={CreditsPage} exact />
-
-          </Switch> */}
       </BrowserRouter>
     );
   }
