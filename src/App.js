@@ -33,7 +33,6 @@ class App extends React.Component {
               >
                 <Switch location={location}>
 
-                  <Route component={LandingPage} />
                   <Route path="/" component={LandingPage} exact />
                   <Route path="/Services" component={ServicePage} exact />
                   <Route path="/Projects" component={ProjectsPage} exact />
